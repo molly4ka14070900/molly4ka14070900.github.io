@@ -281,7 +281,7 @@ $('gf').addEventListener('submit',function(e){
 </script>
 <script>
 (()=>{
-const DB='';/* ← сюди встав адресу Firebase (https://....firebasedatabase.app), тоді таблиця стане спільною для всіх */
+const DB='https://molly-dino-default-rtdb.firebaseio.com';/* ← сюди встав адресу Firebase (https://....firebasedatabase.app), тоді таблиця стане спільною для всіх */
 const $=id=>document.getElementById(id),cv=$('cv'),x=cv.getContext('2d'),sc=$('sc'),bs=$('bs'),ht=$('ht'),nm=$('nm'),trk=$('trk');
 const ls={g:k=>{try{return localStorage.getItem(k)}catch(e){return null}},s:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
 const W=440,H=150,G=124,P=3,DW=14*P,DH=13*P,dpr=Math.min(window.devicePixelRatio||1,3);
